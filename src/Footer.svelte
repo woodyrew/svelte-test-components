@@ -1,6 +1,8 @@
+<svelte:options tag="my-footer"/>
+
 <script>
   export let year = new Date().getFullYear();
-  export let showLicense;
+  export let showlicense = false;
 </script>
 
 <style lang="scss">
@@ -79,7 +81,7 @@
           <strong>{year} &copy; XXX</strong>
           <a href="/legal/privacy-policy/">Privacy Policy</a>
           <a href="/about/gdpr/">Security</a>
-          {#if showLicense}
+          {#if showlicense !== false}
             <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0; vertical-align: sub;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a>
           {/if}
         </div>
