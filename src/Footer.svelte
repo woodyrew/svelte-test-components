@@ -1,5 +1,3 @@
-<svelte:options tag="nx-footer"/>
-
 <script>
   export let year = new Date().getFullYear();
   export let showLicense;
