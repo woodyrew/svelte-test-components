@@ -1,1 +1,5 @@
-import Footer from "./Footer.svelte";
+import App from "./App.svelte";
+
+new App({
+  target: document.getElementById("app")
+});
